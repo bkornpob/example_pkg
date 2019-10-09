@@ -1,19 +1,17 @@
 import setuptools
-with open("README.md","r") as fh:
-    long_description = fh.read()
+
 setuptools.setup(
-    name="example-pkg-bkornpob"
-    ,version="0.0.4"
-    ,author="Kornpob Bhirombhakdi"
-    ,author_email="kbhirombhakdi@stsci.edu"
-    ,long_description=long_description
-    ,long_description_content_type="text/markdown"
-    ,url="https://github.com/bkornpob/example_pkg"
-    ,packages=setuptools.find_packages()
-    ,classifiers=[
-        "Programming Language :: Python :: 3"
-        ,"License :: OSI Approved :: MIT License"
-        ,"Operating System :: OS Independent"
-        ]
-    ,python_requires='>=3.6'
-    )
+    name="example-pkg-bkornpob",
+    version="0.0.4",
+    author="Kornpob Bhirombhakdi",
+    author_email="kbhirombhakdi@stsci.edu",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/bkornpob/example_pkg",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent"
+    ],
+    python_requires='>=3.6'
+)
